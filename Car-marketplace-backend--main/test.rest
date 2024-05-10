@@ -1,0 +1,13 @@
+POST http://127.0.0.1:8000/user/signup Content-Type: application/json
+
+{ "email": "adam@gmail.com", "password": "Pass1234!", "phone":25105888,"location":"issat sousse","full_name":"wassim sghaier"}
+
+###
+
+POST http://127.0.0.1:8000/user/login Content-Type: application/json
+
+{ "email": "wass@gmail.com", "password": "wassim" }
+
+###
+
+GET http://127.0.0.1:8000/user/test_token Content-Type: application/json Authorization: token xxx
